@@ -1,4 +1,54 @@
-p {
+body {
+    background-color: #CCCCCC;
+}
+
+.imgbanner {
+    width: 100%;
+}
+
+.principal{
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#mision {
     text-align: center;
     color: red;
+}
+
+.parrafo2 {
+    text-align: center;
+    color: blue;
+}
+
+.parrafo3 {
+    text-align: center;
+    color: purple;
+}
+
+h2 {
+    text-align: center;
+}
+
+.secundario{
+    padding: 30px;
+}
+
+.listaul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+
+}
+
+.lista{
+    font-style: italic;
+}
+
+.imgdiferenciales{
+    width: 50%;
 }
