@@ -1,5 +1,5 @@
-body {
-    background-color: #CCCCCC;
+.tituloprincipal {
+    padding-left: 30px;
 }
 
 .imgbanner {
@@ -10,7 +10,7 @@ body {
     padding: 20px;
 }
 
-h1 {
+.titulocentralizado {
     text-align: center;
 }
 
@@ -29,9 +29,6 @@ h1 {
     color: purple;
 }
 
-h2 {
-    text-align: center;
-}
 
 .secundario{
     padding: 30px;
