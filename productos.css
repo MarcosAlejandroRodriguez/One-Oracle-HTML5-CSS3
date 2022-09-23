@@ -29,3 +29,39 @@ nav a {
     
 }
 
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*para que no se pasen de los 940px que les habia predefinido arriba*/
+    border-color: #000000; /*para crear un borde se necesitan estos 3 */
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px; /*esto es para hacer el redondeo en el borde*/
+
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
