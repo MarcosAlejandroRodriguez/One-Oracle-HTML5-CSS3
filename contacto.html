@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css ">
+</head>
+<body>
+
+    <header> <!--este se utiliza para el encabezado-->
+
+        <div class="caja">
+            <h1><img src="img-productos/logo.png" alt="logo de la barberia alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">productos</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <form>
+
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@example.com">
+
+            <label for="telefono">Telefono</label> <!--el for se utiliza para llamar el id del input-->
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="68%" rows="10" id="mensaje"></textarea>
+
+            <div> 
+                <p class="test" id="test">Como le gustaria que lo contactemos?</p>
+
+                <!--para que se seleccione solo uno hay que ponerle el mismo "name" a todos-->
+                
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email" >Email</label>
+    
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono" >Telefono</label>
+    
+                
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                
+            </div>   
+
+            <fieldset> <!--se utiliza cuando todos los elementos forman parte del mismo conjunto de datos-->
+                <legend>En cual horario prefiere ser atendido?</legend> <!--significa que es el titulo del fieldset-->
+                <select> <!--crear un selector en cuadro-->
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>le gustaria recibir novedades de la Barberia Alura?</label>
+            <input type="submit" value="enviar" class="enviar">  <!--Para crear un boton enviar los input-->
+
+        </form>
+
+        <table>
+            <thead> <!--etiqueta espeficica para el encabezado de las tablas-->
+                <tr> 
+                    <th>Dia</th> <!--th es lo mismo que td en columnas pero en los encabezados de una tabla se suele utilizar th-->
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            
+            <tbody> <!--en el tbody agregamos el cuerpo de la tabla-->
+                <tr> <!--Crear las filas-->
+                    <td>Lunes</td> <!--Crear las columnas-->
+                    <td>10am a 18pm</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>10am a 18pm</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>10am a 18pm</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="img-productos/logo-blanco.png" alt="logo del pie de pagina">
+        <p class="copyright">&copy Copyright Barber Alura año 2022</p>
+    </footer>
+
+    
+</body>
+</html>
