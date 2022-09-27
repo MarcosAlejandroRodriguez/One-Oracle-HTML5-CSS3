@@ -231,6 +231,10 @@ td , th {
 .items {
     line-height: 2.40; /*height es la altura, en este caso separamos el texto*/
 }
+
+.items::before {
+    content:"*"
+}
 /*-- Es pseudoclase sirve para elegir un elemento de esa clase que quieras modificar en este caso es el primero// tambien puedes usar
  .items:nth-child(y el numero de fila que quieras modificar aqui) y agregar el css a un item en especifico ejemplo :
  .items:nth-child(3) aqui se modificara el item numero 3 de la fila  --*/
@@ -238,10 +242,55 @@ td , th {
     font-weight: bold;
 }
 
+/*el box-shadow se utiliza para crar la sombra tambien se puede utilizar en textos de la misma manera*/
 .imagen-diferenciales{
     width: 60%;
+    box-shadow: 5px 5px 15px #000000;
+}
+
+.imagen-diferenciales:hover {
+    opacity: 70%;
+    transition: 1s;
 }
 
 .video {
     margin: 1em auto;
+}
+
+
+/*-------------CONFIGURACION PARA DISPOSITIVOS MOBILES---------------------*/
+
+
+/*aqui estamos diciendo que aplique esta condicion a pantallas que tengan un maximo de 480px de lateral*/
+
+@media screen and (max-width:480px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+    
+    main {
+        width: auto;
+        
+    
+    }
+
+    .caja, .principal, .contenido-diferenciales {
+        width: auto;
+        
+    }
+
+    .lista-diferenciales, .imagen-diferenciales {
+        width: 100%;
+    }
+
+    .video {
+        margin: 0 auto;
+    }
+
+
 }
